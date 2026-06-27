@@ -1,0 +1,184 @@
+# Negative UI / Bad Website Link Database
+
+Use these as negative references only. Do not clone them. Study what fails: clutter, weak hierarchy, bad responsiveness, unreadable type, dated layout, confusing navigation, deceptive flows, or hostile interaction patterns.
+
+Some links may change, break, autoplay, contain offensive content, or show intentionally ugly/legacy design. Open questionable ones in a safe browser profile.
+
+---
+
+## Bad Website Roundups / Negative Reference Collections
+
+- [Web Pages That Suck](https://www.webpagesthatsuck.com/)
+- [Colorlib — 21 Examples of Bad Websites](https://colorlib.com/wp/bad-websites/)
+- [Weblium — 21 Bad Website Examples](https://weblium.com/blog/21-bad-website-examples/)
+- [Sage Agency — 30 Bad Websites with Terrible Web Designs](https://sage.agency/blog/bad-websites/)
+- [MuffinGroup — Examples of Websites with Bad Design](https://muffingroup.com/blog/websites-with-bad-design/)
+- [Gateway Web Design — Top 10 Worst Website Designs](https://www.gatewaywebdesign.com/the-top-10-worst-website-designs-what-creates-terrible-websites/)
+- [Elegant Themes — Bad Web Design Examples](https://www.elegantthemes.com/blog/resources/bad-web-design-a-look-at-the-most-hilariously-terrible-websites-from-around-the-web)
+- [Alyaman Alhayek Design — 50 Bad Web Design Examples](https://alyamanalhayekdesign.com/blog/bad-web-design-examples/)
+- [HostAdvice — 39 Bad Website Examples](https://hostadvice.com/blog/website-builders/bad-website-examples/)
+- [MasterBundles — Really Bad Websites](https://masterbundles.com/top-really-bad-websites-that-made-designers-sad/)
+- [LetterSiro — Bad Web Design Examples](https://lettersiro.com/bad-web-design-examples/)
+- [Uposition — Bad Websites](https://upositionagency.com/blog/seo/bad-websites/)
+- [Interaction Design Foundation — Bad UI Design Examples](https://ixdf.org/literature/article/bad-ui-design-examples)
+- [CareerFoundry — Common UI Design Mistakes](https://careerfoundry.com/en/blog/ui-design/common-ui-design-mistakes/)
+- [UX Pilot — Bad UX Examples](https://uxpilot.ai/blogs/bad-ux-examples)
+- [Web Design Museum — Bad and Ugly Websites](https://www.webdesignmuseum.org/exhibitions/bad-and-ugly-websites)
+
+---
+
+## Intentionally Bad / Training Examples
+
+- [User Inyerface](https://userinyerface.com/)
+- [User Inyerface — Game](https://userinyerface.com/game.html)
+- [Bad UI Battle / Awesome Bad UI](https://goulartnogueira.github.io/BadUI/)
+- [Can’t Unsee](https://cantunsee.space/)
+- [The World’s Worst Website Ever](https://www.theworldsworstwebsiteever.com/)
+- [The Big Ugly Website](https://thebiguglywebsite.com/)
+- [Reddit — r/badUIbattles](https://www.reddit.com/r/badUIbattles/)
+- [Reddit — r/CrappyDesign](https://www.reddit.com/r/CrappyDesign/)
+- [Reddit — r/assholedesign](https://www.reddit.com/r/assholedesign/)
+
+---
+
+## Dark Pattern / Deceptive UX Databases
+
+- [Deceptive Design — Hall of Shame](https://www.deceptive.design/hall-of-shame/)
+- [Deceptive Design — Pattern Types](https://www.deceptive.design/types)
+- [Dark Patterns Hall of Shame](https://hallofshame.design/)
+- [Dark Patterns Hall of Shame — Collection](https://hallofshame.design/collection/)
+- [Interface Hall of Shame](https://hallofshame.gp.co.at/shame.htm)
+- [C2 Wiki — Interface Hall of Shame](https://wiki.c2.com/?InterfaceHallOfShame=)
+
+---
+
+## Chaotic / Cluttered / Overwhelming Live Website References
+
+- [Arngren](http://www.arngren.net/)
+- [LINGsCARS](https://www.lingscars.com/)
+- [Great Dreams](http://www.greatdreams.com/)
+- [Pacific Northwest X-Ray](http://www2.pnwx.com/)
+- [Bella De Soto — caution: may behave weirdly](http://www.bellads.info/)
+- [Antique Bottle Collectors Resource](http://www.mrbottles.com/)
+- [Patimex](http://www.patimex.com/)
+- [Rudgwick Steam Show](http://www.rudgwicksteamshow.co.uk/)
+- [Tag Team Signs](http://www.tagteamsigns.net/)
+- [Headhunter Hair Styling](https://www.headhunterhairstyling.com/)
+- [Electrifying Times](http://electrifyingtimes.com/)
+- [Mednat](http://www.mednat.org/)
+- [Bavarian Brathaus](http://bavarianbrathaus.info/)
+- [Penny Juice](https://www.pennyjuice.com/)
+- [Kids Dinosaurs](https://kids-dinosaurs.com/)
+- [Dreamland Resort](https://www.dreamlandresort.com/)
+- [Rover’s Morning Glory](https://www.roverradio.com/)
+- [James Bond 007 Museum](https://www.007museum.com/)
+- [Real Ultimate Power](https://www.realultimatepower.net/)
+- [The Monk Zone](https://www.monkzone.com/)
+- [Donut Jerk](https://donutjerk.com/)
+- [Gates N Fences](https://gatesnfences.com/)
+- [Best Electronics / Atari](https://www.best-electronics-ca.com/)
+- [ACME Laboratories](https://acme.com/)
+- [Vortex Technology](https://www.vortex.com/)
+- [Chester Tourist](https://www.chestertourist.com/)
+- [Interrupt Technology Corporation](https://www.itcorp.com/)
+- [Even Balance](https://www.evenbalance.com/)
+- [Exmouth View Hotel](https://exmouthview.weebly.com/)
+- [Life Action Revival](https://lifeactionrevival.org/)
+
+---
+
+## Dated / Text-Heavy / Legacy UI References
+
+- [Berkshire Hathaway](https://www.berkshirehathaway.com/)
+- [Craigslist](https://www.craigslist.org/)
+- [Hacker News](https://news.ycombinator.com/)
+- [Drudge Report](https://www.drudgereport.com/)
+- [Paul Graham](https://www.paulgraham.com/)
+- [Suzanne Collins Books](http://www.suzannecollinsbooks.com/)
+- [Heaven’s Gate — disturbing historical content](https://www.heavensgate.com/)
+- [Internet Archive / Wayback Machine](https://archive.org/web/)
+- [4chan — caution: offensive/NSFW content possible](https://www.4chan.org/)
+- [Green Financial](https://greenfinancial.com/)
+- [Hack Repair](https://hackrepair.com/)
+- [Toronto Cupcake](https://torontocupcake.com/)
+- [Stephen Fry](https://www.stephenfry.com/)
+- [The Room Movie](https://www.theroom.movie/)
+
+---
+
+## Mainstream Sites Often Used as Cautionary UX References
+
+These are not necessarily “bad websites.” Use them to study specific issues like information overload, dense navigation, ad clutter, dated desktop UX, or confusing product surfaces.
+
+- [Yahoo](https://www.yahoo.com/)
+- [CNN](https://www.cnn.com/)
+- [Goodreads](https://www.goodreads.com/)
+- [Lipton](https://www.lipton.com/)
+- [Wayfair](https://www.wayfair.com/)
+- [Workday](https://www.workday.com/)
+- [LinkedIn](https://www.linkedin.com/)
+- [Adobe](https://www.adobe.com/)
+- [Microsoft](https://www.microsoft.com/)
+- [HP](https://www.hp.com/)
+- [The New York Times](https://www.nytimes.com/)
+- [Facebook](https://www.facebook.com/)
+- [Instagram](https://www.instagram.com/)
+- [X / Twitter](https://x.com/)
+
+---
+
+## Historical / Archived Bad-Web Aesthetic References
+
+- [Web Design Museum — Bad and Ugly Websites](https://www.webdesignmuseum.org/exhibitions/bad-and-ugly-websites)
+- [Space Jam 1996](https://www.spacejam.com/1996/)
+- [ACME Laboratories](https://acme.com/)
+- [Heaven’s Gate](https://www.heavensgate.com/)
+- [Berkshire Hathaway](https://www.berkshirehathaway.com/)
+- [Paul Graham](https://www.paulgraham.com/)
+- [Hacker News](https://news.ycombinator.com/)
+- [Craigslist](https://www.craigslist.org/)
+
+---
+
+## Mobile / Responsive UX Failure References
+
+- [Wired — WTF Mobile Web Tracks Terrible Mobile Web Design](https://www.wired.com/2011/11/wtf-mobile-web-tracks-terrible-mobile-web-design)
+- [Designer Daily — WTF Mobile Web](https://www.designer-daily.com/wtf-mobile-web-20990)
+- [Wired — Mobile Websites and Broken Full-Site Access](https://www.wired.com/2014/08/wtf-mobile-websites)
+- [Wired — Mobile-First Design Mistakes](https://www.wired.com/2013/09/designing-for-mobile-means-ditching-deeply-ingrained-pc-instincts)
+
+---
+
+## Search Links for Finding More Negative Examples
+
+- [Google Search — bad website design examples](https://www.google.com/search?q=bad+website+design+examples)
+- [Google Search — worst website designs](https://www.google.com/search?q=worst+website+designs)
+- [Google Search — bad UI examples](https://www.google.com/search?q=bad+UI+examples)
+- [Google Search — bad UX examples](https://www.google.com/search?q=bad+UX+examples)
+- [Google Search — dark pattern examples](https://www.google.com/search?q=dark+pattern+examples)
+- [Google Search — deceptive design examples](https://www.google.com/search?q=deceptive+design+examples)
+- [Google Search — intentionally bad UI](https://www.google.com/search?q=intentionally+bad+UI)
+- [Google Search — ugly websites examples](https://www.google.com/search?q=ugly+websites+examples)
+- [Google Search — cluttered website examples](https://www.google.com/search?q=cluttered+website+examples)
+- [Google Search — mobile UX fails](https://www.google.com/search?q=mobile+UX+fails)
+
+---
+
+## Agent Study Prompt
+
+Use this negative link database to learn what not to do.
+
+For each site or example, extract:
+
+1. What makes the hierarchy fail
+2. What makes the navigation confusing
+3. What makes the typography hard to use
+4. What makes the color system unpleasant or inaccessible
+5. What makes the layout feel cluttered, dated, or careless
+6. What interaction patterns feel hostile or misleading
+7. What breaks on mobile or small screens
+8. What content is missing, vague, duplicated, or overwhelming
+9. What visual decisions would be unacceptable in a modern product UI
+10. What one lesson should be encoded as a design rule
+
+Do not copy the negative examples. Convert the failure modes into constraints for a better original UI.

@@ -1,0 +1,61 @@
+# UI Reference Website Link Database
+
+## Award-Winning / High-Art-Direction References
+
+- [Dropbox Brand](https://brand.dropbox.com)
+- [Exat Typeface](https://exat.hottype.co)
+- [Bruno Simon Portfolio](https://bruno-simon.com)
+- [Merouane Bali Portfolio](https://merodev.net)
+- [Bürocratik / We Are Büro](https://burocratik.com)
+- [The Symphony of Vines](https://www.symphonyofvines.com)
+- [Charles Leclerc](https://charlesleclerc.com)
+- [The Monolith Project](https://themonolithproject.net)
+- [Lacoste Members Experience](https://membersexperience-create.lacoste.com)
+- [ComPsych Brand Hub](https://compsych.konpo.co)
+- [Atoll Digital](https://atolldigital.com)
+- [KOKUYO — Curiosity is Life](https://www.kokuyo.com/en/special/curiosity-is-life/)
+- [Keikku Microsite](https://keikku.madebyburo.com)
+- [Lando Norris](https://landonorris.com)
+- [Messenger by Abeto](https://messenger.abeto.co)
+
+## Product / SaaS / App UI References
+
+- [Figma Config](https://config.figma.com)
+- [Apple Vision Pro](https://www.apple.com/apple-vision-pro/)
+- [Teenage Engineering](https://teenage.engineering)
+- [Raycast](https://www.raycast.com)
+- [Linear](https://linear.app)
+
+## Inspiration Directories
+
+- [CSS Design Awards — Website of the Year](https://www.cssdesignawards.com/woty2025/)
+- [CSS Design Awards](https://www.cssdesignawards.com)
+- [Awwwards — Sites of the Year](https://www.awwwards.com/websites/sites_of_the_year/)
+- [Awwwards — Sites of the Day](https://www.awwwards.com/websites/sites_of_the_day/)
+- [Awwwards](https://www.awwwards.com)
+- [Godly](https://godly.website)
+- [Land-book](https://land-book.com)
+- [Siteinspire](https://www.siteinspire.com)
+- [Hover States](https://www.hoverstat.es)
+- [Minimal Gallery](https://minimal.gallery)
+
+## Study Prompt for Agents
+
+Use these websites as visual-reference material only. Do not clone layouts, assets, copy, brand systems, illustrations, or proprietary interactions.
+
+For each site, extract:
+
+1. Typography system
+2. Color system
+3. Layout grammar
+4. Spacing rhythm
+5. Component treatment
+6. Motion language
+7. Image or illustration style
+8. Navigation structure
+9. Content density
+10. One distinctive design move
+11. What makes it feel human-designed
+12. What should not be copied directly
+
+Then create a new visual system for the target product with its own original art direction.\
