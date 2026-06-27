@@ -29,17 +29,36 @@ Good inspiration should help answer:
 - What should be avoided because it is generic, hostile, inaccessible, dated, or irrelevant?
 - What original design thesis can be created from these lessons?
 
+## Reference-to-Decision Contract
+
+Avoid reference theater. A reference is only useful if it changes a visible decision in the final design.
+
+For each selected reference, be able to state:
+
+```text
+Reference:
+Specific lesson:
+Visible decision it will change:
+What will not be copied:
+Risk if applied blindly:
+```
+
+Do not cite the same famous products in every project by default. Linear, Raycast, Apple, Teenage Engineering, Awwwards, and gallery sites are only acceptable when the extracted lesson is specific and visibly applied to the target product's structure, copy, interaction, or data.
+
+If the final work still looks AI-generated, the reference-to-decision contract failed. Revisit the references, choose fewer stronger lessons, and rebuild the design decisions instead of adding more decorative inspiration.
+
 ## Where to Look
 
 Use a mix of reference types. Do not rely only on award galleries.
 
 1. **Direct category references** — competitors or products with similar user goals.
-2. **Adjacent category references** — different industries with similar complexity, trust needs, emotion, or workflow.
-3. **High-art-direction references** — award-winning or experimental sites for layout, typography, motion, and storytelling.
-4. **Product UI references** — real apps, dashboards, onboarding flows, pricing pages, docs, forms, search, settings, and empty states.
-5. **Brand-system references** — typography, colour, logo, photography, iconography, tone of voice, and component rules.
-6. **Offline or physical-world references** — magazines, signage, packaging, industrial controls, maps, books, film titles, museum labels, fashion, architecture, scientific instruments, sports graphics.
-7. **Negative references** — cluttered, dated, deceptive, or inaccessible examples that define what not to do.
+2. **Real product artifacts** — screenshots, docs, screenshots from the existing codebase, forms, logs, receipts, reports, notifications, settings, command menus, exports, support articles, or data models.
+3. **Adjacent category references** — different industries with similar complexity, trust needs, emotion, or workflow.
+4. **High-art-direction references** — award-winning or experimental sites for layout, typography, motion, and storytelling.
+5. **Product UI references** — real apps, dashboards, onboarding flows, pricing pages, docs, forms, search, settings, and empty states.
+6. **Brand-system references** — typography, colour, logo, photography, iconography, tone of voice, and component rules.
+7. **Offline or physical-world references** — magazines, signage, packaging, industrial controls, maps, books, film titles, museum labels, fashion, architecture, scientific instruments, sports graphics.
+8. **Negative references** — cluttered, dated, deceptive, or inaccessible examples that define what not to do.
 
 If local files exist, start with:
 
@@ -81,6 +100,19 @@ A bad inspiration source is:
 
 Rule: if the only thing you can say is “it looks cool,” it is weak inspiration. Good inspiration teaches a transferable design principle.
 
+## What the Current Good References Actually Teach
+
+Use these as examples of extraction quality:
+
+- **Dropbox Brand:** brand systems are toolkits. The lesson is not “use bright brand art”; it is to define rules for details, voice, type, colour, image treatment, and component behavior together.
+- **Linear:** credible UI uses realistic product artifacts and controlled density. The lesson is to expose domain objects, states, IDs, comments, timelines, and decisions rather than invented dashboard numbers.
+- **Raycast:** the interface, copy, and proof all reinforce one behavior: fast keyboard-first launching. The lesson is to let the product behavior drive layout and language.
+- **Teenage Engineering:** distinctive does not mean busy. The lesson is sparse structure, product codes, physicality, eccentric but disciplined naming, and consistent restraint.
+- **Apple HIG:** polish depends on fundamentals: legible type, sufficient contrast, aligned relationships, controls near affected content, and touch targets large enough to use.
+- **Smashing copy guidance:** copy and design are inseparable. The lesson is to ask why the text is useful, use the right tone, and remove self-important language.
+
+These lessons should lead to visible decisions. If they only appear in the manifest, they were not applied.
+
 ## Evaluation Rubric
 
 Score each candidate from 0-3:
@@ -111,10 +143,12 @@ For each selected inspiration, extract:
 8. Navigation and information architecture
 9. Content density
 10. Copy tone and specificity
-11. One distinctive design move
-12. What makes it feel human-designed
-13. What should not be copied directly
-14. One principle to apply to the target product
+11. Domain vocabulary, objects, and realistic states worth adapting
+12. One distinctive design move
+13. What makes it feel human-designed
+14. What should not be copied directly
+15. One principle to apply to the target product
+16. The visible design decision this principle will change
 
 Never copy:
 
@@ -126,7 +160,21 @@ Never copy:
 
 ## Colour Inspiration Rules
 
-When using colour inspiration, extract relationships, not hex codes.
+When using colour inspiration, extract relationships and roles, not hex codes.
+
+Before applying a palette, write:
+
+```text
+Source material / reference:
+Dominant neutral:
+Text colour:
+Surface colour:
+Primary action colour:
+Semantic colours:
+Accent restraint rule:
+Contrast risk:
+What not to copy:
+```
 
 Prefer notes like:
 
@@ -139,8 +187,9 @@ Avoid:
 - Copying exact brand palettes.
 - Reusing generic AI palettes: purple-blue gradients, teal-on-white SaaS, neon cyan/pink on black, washed pastel cards.
 - Letting every reference contribute a colour until the palette becomes random.
+- Choosing “warm,” “premium,” “dark,” or “playful” colours without assigning roles and contrast.
 
-A good colour reference explains hierarchy, mood, and state. A bad colour reference is merely decorative.
+A good colour reference explains hierarchy, mood, and state. A bad colour reference is merely decorative. If the user says colours are off, redo the colour extraction rather than nudging hex values.
 
 ## Copy Inspiration Rules
 
@@ -152,8 +201,17 @@ Study how good references make copy specific:
 - Clear CTAs
 - Useful section headings
 - Honest constraints
+- Warnings, helper text, empty states, undo text, and confirmations when the workflow needs them
 
 Reject inspiration whose copy is interchangeable buzzword filler. If the words could describe any startup, do not imitate that voice.
+
+Before finalizing copy, ask:
+
+- Why would the user want to read this sentence?
+- Does it help them decide or act?
+- Does it match the product's actual tone?
+- Could it be shorter and more concrete?
+- Does it avoid faux-profound marketing language?
 
 ## Building an Inspiration Set
 
@@ -165,7 +223,7 @@ For most design tasks, collect:
 - 1 product/UI reference
 - 1 negative reference
 
-Then reduce to **2-4 primary influences**. Too many references create averaged, generic output.
+Then reduce to **2-4 primary influences**. Too many references create averaged, generic output. Keep at least one source that teaches product substance, not just visual style. If visual quality has already been rejected once, reduce harder: use one product-substance reference, one art-direction/type reference, and one negative constraint only.
 
 For each primary influence, define:
 
@@ -173,10 +231,13 @@ For each primary influence, define:
 Reference:
 Why it is relevant:
 What to learn:
+Visible decision it changes:
 What not to copy:
 Design principle to apply:
 Risk if overused:
 ```
+
+If a reference cannot be tied to a visible decision, drop it from the primary set.
 
 ## Translating Inspiration Into Original Direction
 
@@ -185,13 +246,17 @@ After research, create a new design thesis:
 ```text
 Target product:
 Audience:
+Primary workflow/screen:
 Desired feeling:
 Primary inspiration lessons:
+Reference-to-decision mapping:
 Negative references avoided:
+Domain vocabulary/data to use:
 Original art direction:
 Typography direction:
 Colour direction:
 Layout grammar:
+Interaction model:
 Motion language:
 Content/copy voice:
 Signature design move:

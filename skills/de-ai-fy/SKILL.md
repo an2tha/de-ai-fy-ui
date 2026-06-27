@@ -30,6 +30,8 @@ Before major design work:
 3. Choose 1-2 negative references or bad-pattern categories to explicitly avoid.
 4. Extract lessons; never copy surface details.
 5. Define a fresh art direction for the user's actual product.
+6. Write a tiny **reference-to-decision map** before coding: each reference must change a visible typography, colour, layout, component, copy, interaction, or data decision.
+7. If the user says the output is bad or AI-looking, fetch or reread the best references again and regenerate from the decision map instead of tweaking the rejected output.
 
 For each positive reference, study:
 
@@ -58,6 +60,20 @@ For each negative reference, study:
 - What content is missing, duplicated, vague, or overwhelming
 - Which visual choices would be unacceptable in a modern product UI
 - The one rule that prevents the failure
+
+## Research-Backed Lessons From the Reference Set
+
+Use these as operating rules when translating the good and bad examples into original work:
+
+- **Dropbox Brand / Charles Eames principle:** details are not decoration; they are the design. Every border, texture, icon, label, and spacing rule needs a job. If a detail cannot explain its job, remove it.
+- **Linear principle:** credible product UI shows real artifacts: issue IDs, comments, code, states, timelines, ownership, failure modes, and priority. For other products, substitute equally real domain artifacts instead of generic metrics.
+- **Raycast principle:** a strong concept can come from one product behavior. Raycast’s keyboard/launcher world changes copy, layout, interaction, and proof. Do not borrow “command palette” visually unless the product behavior truly is command-first.
+- **Teenage Engineering principle:** sparse navigation, product codes, odd-but-consistent naming, and small physical product details make a brand feel authored. Quirk works only when the system is disciplined.
+- **Apple HIG principle:** mobile polish starts with basics: primary content fits the screen, touch targets are at least 44×44 pt, text is legible, contrast is ample, controls sit near the content they affect, and alignment clarifies relationships.
+- **Smashing copy principle:** copy is part of design. Ask “why would anyone want to read this?” before placing text. Remove self-important, faux-meaningful, or over-polished lines that do not tell the user anything.
+- **Bad-example principle:** clutter, weak hierarchy, low contrast, random colour, tiny tap targets, and hidden/deceptive controls are not style choices. They are rejection reasons.
+
+These lessons are not optional citations. They must produce visible decisions in the output.
 
 ## Web-Researched Reference Findings
 
@@ -90,12 +106,43 @@ These observations were distilled from live/fetched reference pages, award/case-
 A good website must have:
 
 - **A clear concept:** One memorable point of view, not a pile of generic sections.
+- **Product evidence:** Real nouns, workflows, constraints, states, and artifacts from the product's domain are visible in the UI.
 - **Purposeful hierarchy:** Users can tell what matters in under five seconds.
+- **Structural intent:** The page or screen composition is chosen for the workflow, not inherited from a default stack of cards.
 - **Original art direction:** Typography, color, layout, and motion fit the product's personality.
 - **Responsive craft:** Mobile, tablet, and desktop are designed, not merely squeezed.
 - **Accessible interaction:** Semantic HTML, keyboard states, focus states, readable contrast, reduced-motion support.
 - **Trustworthy UX:** No deceptive flows, hidden controls, confusing opt-outs, bait-and-switch pricing, or manipulative consent.
 - **Production polish:** Real content, robust states, consistent spacing, clean code, performance-aware assets.
+
+## Mandatory Design Passes
+
+Run these passes in order before writing production UI or preview HTML. Skipping them is the main reason outputs look AI-generated.
+
+1. **Content pass:** write the actual nouns, actions, states, errors, labels, and one imperfect scenario. No lorem ipsum, no generic metrics, no “dashboard” until the content proves it needs one.
+2. **Structure pass:** choose the product-native model for the screen: editor, receipt, inspection view, timeline, map, board, control panel, sheet, form, log, comparison, or decision queue. Avoid card piles by default.
+3. **Typography pass:** choose type roles before colors. Define display, title, body, label, numeric, and code/tabular roles. On mobile, body copy should normally be around platform-default legibility (roughly 16-17px/pt) and small labels must remain readable.
+4. **Colour pass:** build semantic tokens, not vibes: background, surface, elevated, text, muted, border, primary action, secondary accent, success, warning, danger, focus. Use one dominant neutral family and one primary accent unless the product truly needs more. Check contrast before calling it done.
+5. **Component pass:** define the component grammar: radius, border weight, shadow/no-shadow, density, icons, dividers, buttons, inputs, selected states, disabled states, loading/error states. Components should feel related, not cloned.
+6. **Copy pass:** read headings, CTAs, empty states, warnings, and helper text aloud. Replace vague adjectives with product nouns and verbs. If the words could fit any startup, rewrite them.
+7. **Visual inspection pass:** open the result and compare it against the reference-to-decision map and bad-example constraints. If color, text, hierarchy, or spacing feels wrong, regenerate the weak screen; do not justify it in prose.
+
+## Rejection / Rebuild Protocol
+
+When a user says a design looks AI-generated, generic, ugly, “off,” or bad, **do not polish the same scaffold**. First identify the visible failure, then rebuild the weakest pieces from a different product model.
+
+Hard rules after rejection:
+
+- Do not respond with minor spacing, border-radius, gradient, or copy tweaks if the underlying skeleton is the problem.
+- Name and kill the repeated scaffold: phone mockup, centered hero, rounded card grid, browser chrome, status bar, bottom nav, left rationale panel, fake dashboard, or generic side-by-side preview frame.
+- Reduce quantity before quality drops. Three strong directions beat six weak variants.
+- Use one product-specific object as the structural spine: a rack timer, receipt, route map, contact sheet, film strip, ledger, command surface, inspection bench, calendar board, lab label, or another domain-native artifact.
+- Remove presentation furniture from previews. The preview should look like the product; manifest/index can hold rationale.
+- Re-run the bad-example constraints: visible hierarchy, no clutter, no tiny controls, no hostile ambiguity, no vague content.
+- Rebuild the colour and copy from first principles. “Colors are off” means the palette lacks roles or contrast; “text is off” means the content pass failed.
+- Re-open the result only after the new option would still make sense with the product name hidden.
+
+If the design still looks like it could be rebranded for a CRM, finance app, AI notes app, or generic wellness dashboard, reject it and rebuild again.
 
 ## Make It Feel Human-Designed
 
@@ -111,6 +158,23 @@ Then encode the direction through:
 - **Motion:** Use motion to clarify state, guide attention, and add delight. Prefer a few well-timed moments over constant decoration.
 - **Texture and detail:** Add depth through subtle noise, borders, shadows, illustration, iconography, grid lines, custom dividers, image treatment, or tactile micro-details when they support the concept.
 - **Content:** Replace lorem ipsum and vague marketing with specific, credible copy. Strong content makes the UI feel real.
+
+## Anti-Template Generation Rules
+
+A design can use good colors and typography and still feel AI-generated if it is clearly produced from a reusable scaffold. Before styling, design the workflow and the content model.
+
+- Start from a concrete user moment: what the user is trying to do, what they already know, what is urgent, what can wait, and what can go wrong.
+- Pick the information architecture for that moment. Do not automatically reach for hero + cards, phone shell + bottom nav, dashboard widgets, or a left text brief with a device mockup.
+- Make the primary structure product-specific: receipt, map, timeline, instrument panel, specimen sheet, route, ledger, inbox, canvas, checklist, split view, command surface, contact sheet, workbench, counter, dial, or another form that matches the domain.
+- If creating multiple options, do not reuse the same outer scaffold, class structure, navigation model, and card rhythm across all of them unless those are hard product constraints. Shared device frames are allowed only when the inside of the product has materially different IA and interaction grammar.
+- Avoid fake-device autopilot. A mobile product can be shown as a full viewport, flow strip, interaction close-up, native sheet, storyboard, or artifact view; it does not automatically need a decorative phone frame, status bar, bottom nav, and generic cards.
+- Use a coherent data fixture instead of scattered invented numbers. Names, dates, units, statuses, item labels, errors, and totals should belong to the same plausible scenario.
+- Include at least one realistic imperfect state when appropriate: overdue, skipped, edited, unsynced, partially complete, unavailable, conflicted, empty, loading, warning, or recovery state.
+- Keep design rationale in notes, manifests, or the final response. The preview itself should mostly look like the product, not a poster explaining the design direction.
+- Vary component anatomy, not just colors: controls, cards, tables, lists, filters, nav, empty states, and detail views should have shapes and behaviors that follow the chosen concept.
+- Avoid "reference theater": do not cite Linear, Raycast, Apple, Teenage Engineering, or gallery sites unless a visible design decision can be traced to a specific lesson.
+
+Anti-template smell test: if another product name could be swapped in with only copy changes, or if all options share the same skeleton with different palettes, the design is not de-AI-fied yet.
 
 ## Colour / Color Choice Rules
 
@@ -128,7 +192,7 @@ Do **not** default to:
 
 Build colour systems deliberately:
 
-- Start from the product's world: materials, audience, industry, geography, photography, physical environment, or emotional tone.
+- Start from the product's world: materials, audience, industry, geography, photography, physical environment, or emotional tone. Name the source in the design notes.
 - Choose a dominant background/surface family first, then text, borders, accents, and semantic states.
 - Use one primary accent with restraint; add secondary accents only when they have a job.
 - Make neutrals characterful: warm ivory, graphite, bone, ink, clay, fog, metal, charcoal, paper, or other context-specific bases.
@@ -137,6 +201,8 @@ Build colour systems deliberately:
 - Make light and dark themes feel designed separately; do not simply invert colours.
 - Define tokens for background, surface, elevated surface, text, muted text, border, primary, accent, success, warning, danger, and focus.
 - Use colour to clarify hierarchy and state, not just to decorate.
+- Do a **colour role audit**: every non-neutral colour must be tagged as action, status, data category, brand memory, illustration, or atmosphere. Delete untagged colours.
+- Avoid “mud”: if the palette uses many muted warm tones, add clear contrast through ink, paper, or one sharp accent; if the palette is dark, separate surfaces by luminance before adding hue.
 
 When deriving colours from inspiration:
 
@@ -178,6 +244,8 @@ Write copy deliberately:
 - Keep claims honest. If a feature is mocked, experimental, or not implemented, do not imply it exists.
 - Match the voice to the product: clinical, playful, technical, luxurious, utilitarian, rebellious, calm, or editorial — but choose one intentionally.
 - Vary sentence length and structure. Human copy has rhythm; AI copy often has uniformly polished cadence.
+- Cut self-important lines. If a sentence sounds profound but gives no instruction, evidence, or useful emotional signal, delete it.
+- Read all headings and CTAs out loud. If they sound like an ad for an unnamed SaaS product, rewrite them with product nouns.
 
 Useful rewrites:
 
@@ -195,10 +263,16 @@ Do not default to:
 - Inter/Roboto/system font everywhere with no typographic personality.
 - Purple-blue gradients, neon glows, and identical rounded cards unless strongly justified.
 - Repetitive sections with the same card grid rhythm.
+- The same phone/browser shell, status bar, nav, rounded-card rhythm, and explanatory side panel repeated across every option.
+- Preview furniture that explains the design more than the UI does: “Best for / Design move / Avoids” panels, giant option labels, mock device bezels, decorative browser chrome, or side-by-side rationale columns.
 - Stock dashboard screenshots floating in a browser chrome with no product-specific idea.
+- Static dashboard summaries when the task calls for a flow, editor, form, log, transaction, review, or decision screen.
+- Synthetic repeated fixture data such as generic targets, fake stats, vague streaks, and interchangeable rows that do not form one believable scenario.
+- Formulaic rationale labels like “Best for / Design move / Avoids” repeated inside every preview page.
 - Random decorative shapes that do not reinforce the brand or content.
 - Excessive animation that hides weak layout or slows the page.
 - Overly smooth, sterile interfaces with no human quirks or craft.
+- Safe averaged art direction: five muted palettes, five similar card stacks, five generic headings, and no single opinionated design move.
 
 ## Convert Bad-Web Patterns Into Rules
 
@@ -310,6 +384,8 @@ Before implementing a substantial UI, internally create a brief:
 ```text
 Product/context:
 Audience:
+Primary workflow or screen state:
+Real content/data available:
 Tone/art direction:
 Positive references studied:
 Negative references avoided:
@@ -317,7 +393,9 @@ Signature design move:
 Typography plan:
 Color plan:
 Layout grammar:
-Motion plan:
+Interaction and state plan:
+Scenario/data fixture plan:
+Anti-template risks to avoid:
 Accessibility/responsive considerations:
 ```
 
@@ -332,8 +410,10 @@ Before delivering, verify:
 - Typography, color, spacing, and components feel like one system.
 - There is at least one memorable design move specific to the product.
 - The design does not resemble a generic AI-generated SaaS template.
+- The design could not be reused for an unrelated product by changing only names and colors.
+- The UI contains domain-specific artifacts, labels, data, and at least one realistic state beyond the happy path when appropriate.
 - Navigation and calls to action are clear.
 - Forms and interactive flows are honest and usable.
 - Mobile layouts are intentionally designed.
 - Accessibility basics are covered.
-- The UI avoids clutter, dark patterns, unreadable type, random color, and hostile interactions.
+- The UI avoids clutter, dark patterns, unreadable type, random color, hostile interactions, and repeated preview scaffolds.

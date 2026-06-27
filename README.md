@@ -2,7 +2,7 @@
 
 A small set of agent skills for making web interfaces feel less AI-generated and more intentionally designed.
 
-This repo helps coding agents create websites with stronger art direction, better colour and copy choices, more useful inspiration research, and browser-based design previews before implementation.
+This repo helps coding agents create websites with stronger art direction, better colour and copy choices, more useful inspiration research, and browser-based design previews before implementation. It also adds hard anti-template gates so generated options do not collapse into the same scaffold with different palettes.
 
 ## What This Is
 
@@ -14,11 +14,12 @@ This repo helps coding agents create websites with stronger art direction, bette
 - Weak hierarchy and repetitive card grids
 - Generic fonts, colours, and CTAs
 - Inspiration copying instead of original art direction
+- The same phone/browser shell, card stack, fake data, and rationale copy repeated across every option
 - Dark patterns, clutter, and inaccessible UI
 
 ## Included Skills
 
-### `SKILL.md` — de-ai-fy
+### `skills/de-ai-fy/SKILL.md` — de-ai-fy
 
 Main website-design skill. Covers:
 
@@ -32,25 +33,38 @@ Main website-design skill. Covers:
 
 Use when building or improving a website, landing page, dashboard, product UI, or component system.
 
-### `design-preview-skill/SKILL.md`
+### `skills/design-preview-skill/SKILL.md`
 
 Preview workflow skill. Instructs the agent to:
 
+- Lock the product context before generating previews
 - Create `N` standalone HTML design previews
+- Define a divergence contract so options differ in IA, flow, structure, interaction, and visual system — not just color
+- Use coherent, product-specific mock data and realistic states
 - Open them in the browser
 - Let the user choose a preferred direction
 - Generate surgical refinements like “modify the fonts” or “make 4 more iterations of option 2”
 - Avoid implementing final production UI until a direction is approved
 
-### `inspirations-skill/SKILL.md`
+### `skills/inspirations-skill/SKILL.md`
 
 Research and reference-selection skill. Instructs the agent to:
 
-- Find good inspiration from direct, adjacent, product, brand, editorial, and negative references
+- Find good inspiration from direct, adjacent, product, brand, editorial, artifact, and negative references
 - Distinguish useful inspiration from bad/generic inspiration
 - Extract principles without copying assets, layouts, or brand systems
+- Tie each reference to a visible design decision instead of citing references decoratively
 - Align references with the main `de-ai-fy` standards
 - Translate inspiration into original design directions
+
+### `skills/design-output-audit-skill/SKILL.md`
+
+Audit skill for generated previews or implemented UI. Instructs the agent to:
+
+- Detect repeated scaffolds, fake data, formulaic copy, and decorative reference citations
+- Compare options as a set, not just one-by-one
+- Score product specificity, structural originality, data realism, interaction depth, and accessibility
+- Reject or revise previews before showing them when they still look AI-generated
 
 ## Reference Files
 
@@ -80,8 +94,9 @@ Agents should use these only to extract constraints — never to copy.
 2. Use `good-websites.txt` and `bad-examples.txt` to identify lessons and constraints.
 3. Use the main `de-ai-fy` skill to define a distinct art direction.
 4. Use `design-preview-skill` to generate browser previews when visual comparison would help.
-5. Let the user select or refine a direction.
-6. Implement the approved design into the real codebase.
+5. Use `design-output-audit-skill` to reject repeated scaffolds, generic mock data, and AI-looking preview sets before showing them.
+6. Let the user select or refine a direction.
+7. Implement the approved design into the real codebase.
 
 ## Installation / Usage with Pi
 
@@ -105,12 +120,13 @@ You can also add this repo path to Pi settings:
 
 Pi will discover:
 
-- The root `SKILL.md`
-- `design-preview-skill/SKILL.md`
-- `inspirations-skill/SKILL.md`
+- `skills/de-ai-fy/SKILL.md`
+- `skills/design-preview-skill/SKILL.md`
+- `skills/inspirations-skill/SKILL.md`
+- `skills/design-output-audit-skill/SKILL.md`
 
 ## Philosophy
 
 Do not make websites that look like default AI output.
 
-Good design should feel specific to the product, audience, and context. References are used to extract principles, not to clone. Colour, copy, layout, motion, and components should all serve a deliberate design thesis.
+Good design should feel specific to the product, audience, and context. References are used to extract principles, not to clone. Colour, copy, layout, motion, data, states, IA, and components should all serve a deliberate design thesis.
